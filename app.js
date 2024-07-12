@@ -1,5 +1,6 @@
 function encriptar() {
     let texto = document.getElementById('input').value;
+    
     let encriptado = [];
 
 
@@ -20,5 +21,12 @@ function encriptar() {
         }
     }
 
+    let nuevoParrafo = document.createElement('p');
     
+    // Añadir el texto al nuevo elemento p
+    nuevoParrafo.textContent = encriptado.join(''); // Aquí puedes poner tu lógica de encriptación
+
+    // Añadir el nuevo p al contenedor de la clase "der"
+    let contenedorDer = document.querySelector('.der');
+    contenedorDer.innerHTML = nuevoParrafo.textContent;
 }
