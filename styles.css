@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    background-color: #D8DFE8;
+    font-family: "Inter", sans-serif;
+
+    .todo{
+        display: flex;
+
+        .izq{
+
+            .input{
+                height: 41rem;
+            }
+
+            .advertencia{
+                display: flex;
+            }
+        }
+
+        .der{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
