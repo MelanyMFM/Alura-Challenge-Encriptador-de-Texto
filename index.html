@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="./assets/a.svg" alt="logo" />
+    <img class="logo" src="./assets/a.svg" alt="logo" />
     <div class="todo">
         <div class="izq">
-            <input type="text" class="input" id="input" placeholder="Ingrese el texto aquí" />
+            <textarea type="text" class="input" id="input" placeholder="Ingrese el texto aquí"></textarea>
             <div class="advertencia">
                 <img src="./assets/icon.png" alt="icon" />
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones">
-                <button onclick="encriptar();">Encriptar</button>
-                <button>Desencriptar</button>
+                <button onclick="encriptar();" id="encriptar">Encriptar</button>
+                <button onclick="desencriptar();" id="desencriptar">Desencriptar</button>
             </div>
         </div>
         <div class="der" id="der">
-            <img src="./assets/Muñeco.svg" alt="Muñeco buscando" />
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="inicial">
+                <img src="./assets/Muñeco.svg" alt="Muñeco buscando" />
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            
         </div>
     </div>
     <script src="app.js"></script>
